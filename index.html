@@ -1,490 +1,144 @@
-<html lang="es">
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Juan David Marulanda - Líder de soluciones digitales, Full Stack Developer y Arquitecto de Software en Sistecrédito." />
+  <meta property="og:title" content="Juan David Marulanda - Líder en Soluciones Digitales" />
+  <meta property="og:description" content="Conoce mis proyectos, experiencia y liderazgo tecnológico en el sector financiero." />
+  <title>Juan David Marulanda | Soluciones Digitales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }header {
+  background: #1f2937;
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
 
-<head>
-    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <script  type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.js"></script>
-   
-    <title>Juan David Marulanda Portafolio</title>
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <!-- Theme CSS -->
-     <link rel="stylesheet" type="text/css" href="style.css">
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
 
-    <!-- Custom Fonts -->
-   
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+main {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: auto;
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+section {
+  margin-bottom: 3rem;
+}
 
-</head>
+h2 {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
 
-<body id="page-top" class="index">
+.proyecto {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Portafolio</a>
-            </div>
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portafolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">Acerca de mi</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">En Contacto</a>
-                    </li>
-                     <li class="page-scroll">
-                        <a href="#privacy-policy">Política de Privacidad</a>
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="intro-text">
-                        <span class="name">Juan David Marulanda V.</span>
-                        <hr class="star-light">
-                        <span class="skills">Full Stack Web Developer</span>
-                    </div>
-                    <img class="img-responsive img-perfil" src="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/13669092_10154321312849449_479965692255396761_n.jpg?oh=7bcd6653e092fc0fdcbea726a2fa5e0c&oe=5857245C" alt="">
-                    
-                </div>
-            </div>
-        </div>
-    </header>
+button {
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portafolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://scontent.feoh3-1.fna.fbcdn.net/t31.0-8/13920221_10154335571849449_5566071775185540455_o.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                       <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                           <div class="caption">
-                               <div class="caption-content">
-                                   <i class="fa fa-search-plus fa-3x"></i>
-                               </div>
-                            </div>
-                            <img src="https://scontent.feoh1-1.fna.fbcdn.net/t31.0-8/13937966_10154341249104449_4961263130186412164_o.jpg" class="img-responsive" alt="">
-                        </a>
-                </div>
-                 
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://scontent.feoh1-1.fna.fbcdn.net/t31.0-8/13937897_10154335571774449_2017910771379780369_o.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row">    
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://scontent.feoh1-1.fna.fbcdn.net/t31.0-8/13962934_10154341326269449_2719821641857324318_o.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-              
-               
-          </div>
-              
-        </div>
-      
-    </section>
+button:hover {
+  background-color: #1e40af;
+}
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Acerca de mi</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Soy una persona que se caracteriza por su responsabilidad, facilidad de aprendizaje, trabajo en equipo y sentido de pertenencia. 
-                      He participado de proyectos de implementación y apoyo a desarrollo de nuevo software de gestión.</p>
+  </style>
+</head><body>
+  <header>
+    <h1>Juan David Marulanda</h1>
+    <p>Ingeniero de Sistemas | Líder de Soluciones Digitales | Full Stack Developer | Arquitecto Cloud & AI</p>
+  </header>  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Ingeniero de Sistemas con más de 15 años de experiencia en desarrollo de software, liderazgo de equipos y diseño de soluciones tecnológicas. Actualmente lidero las tribus Fénix y Conexión 360 en Sistecrédito, dirigiendo 11 equipos de solución centrados en canales digitales, pasarela de pagos, onboarding digital y sistemas conversacionales.</p>
+    </section><section>
+  <h2>Áreas de especialización</h2>
+  <ul>
+    <li>Frontend: Angular, UX/UI accesible y responsive</li>
+    <li>Backend: NestJS, .NET Core, arquitecturas BFF y microservicios</li>
+    <li>Cloud: Azure AKS, Azure B2C, DevOps Pipelines, Docker</li>
+    <li>AI: Bots con Azure OpenAI, NLP y automatización de procesos</li>
+    <li>Integraciones: APIs REST, GraphQL, CRM, WhatsApp, pasarelas de pago</li>
+  </ul>
+</section>
 
-                </div>
-                <div class="col-lg-4">
-                    <p>A pesar de interesarme por dominar de la mejor manera posible las tareas encomendadas mis fortalezas se enfocan hacia el área del desarrollo, implementación y gestión de software. .</p></p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+<section>
+  <h2>Proyectos destacados</h2>
+  <div class="proyecto">
+    <h3>Credinet</h3>
+    <p>Plataforma bancaria con arquitectura distribuida, backend en microservicios, frontend con Angular, autenticación con Azure B2C y despliegue automatizado en Azure Kubernetes Service.</p>
+  </div>
+  <div class="proyecto">
+    <h3>Chatbot Multicanal Inteligente</h3>
+    <p>Chatbot empresarial con capacidad para más de 10.000 usuarios concurrentes, integrado con WhatsApp, sitio web y backend C#; soportado por Azure OpenAI para manejo de lenguaje natural.</p>
+  </div>
+  <div class="proyecto">
+    <h3>Onboarding Digital Aliados</h3>
+    <p>Automatización del proceso de vinculación de aliados con formularios inteligentes, validación documental automática y experiencia optimizada desde móviles.</p>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>En Contacto</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email " id="email" required data-validation-required-message="Por favor ingrese su email.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Número Telefónico</label>
-                                <input type="tel" class="form-control" placeholder="Número de teléfono" id="phone" required data-validation-required-message="Por favor ingrese su número de teléfono.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Mensaje</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingrese un mensaje."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="privacy-policy">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Politica de privacidad</h2>
-                    <p>
-                        Política de Privacidad de ju4nr3v0l.github.io
+<section>
+  <h2>Educación y formación</h2>
+  <p>Ingeniero de Sistemas - Universidad de La Sabana.<br>Formación continua en arquitecturas escalables, DevOps, seguridad en la nube y liderazgo técnico.</p>
+</section>
 
-                        Fecha de última actualización: 28/07/2023
+<section class="contacto">
+  <h2>Contáctame</h2>
+  <form>
+    <input type="text" placeholder="Nombre completo" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
 
-                        Agradecemos tu interés en visitar ju4nr3v0l.github.io (en adelante, el "Sitio"). La privacidad de nuestros visitantes es de suma importancia para nosotros. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información personal que puedas proporcionarnos mientras utilizas nuestro Sitio.
-
-                        1. Información recopilada:
-
-                        1.1. Información proporcionada por el usuario: Podemos recopilar información personal que tú elijas proporcionarnos voluntariamente cuando interactúas con nuestro Sitio. Esto incluye, entre otros, tu nombre, dirección de correo electrónico y cualquier otra información que decidas compartir.
-
-                        1.2. Información recopilada automáticamente: Cuando visitas nuestro Sitio, automáticamente recopilamos cierta información sobre tu dispositivo y tu actividad en el Sitio. Esta información puede incluir tu dirección IP, tipo de navegador, sistema operativo, páginas vistas y la duración de tu visita.
-
-                        2. Uso de la información:
-
-                        2.1. Utilización de información personal: La información personal que recopilamos puede ser utilizada para responder a tus consultas, enviar actualizaciones sobre el Sitio, procesar transacciones en línea y mejorar la experiencia general de los usuarios en el Sitio.
-
-                        2.2. Uso de información no personal: La información no personal recopilada automáticamente puede ser utilizada para fines estadísticos y analíticos, y para mejorar el rendimiento y la funcionalidad del Sitio.
-
-                        3. Cookies y tecnologías similares:
-
-                        Nuestro Sitio puede utilizar cookies y tecnologías similares para mejorar la experiencia del usuario y para recopilar información adicional sobre el uso del Sitio. Puedes ajustar la configuración de tu navegador para que rechace las cookies, aunque esto podría afectar algunas funcionalidades del Sitio.
-
-                        4. Divulgación de información:
-
-                        No compartiremos, venderemos ni transferiremos tu información personal a terceros, excepto cuando sea necesario para cumplir con obligaciones legales o en caso de que cuentes con tu consentimiento explícito.
-
-                        5. Enlaces a sitios de terceros:
-
-                        Nuestro Sitio puede contener enlaces a sitios web de terceros. No somos responsables de las prácticas de privacidad o el contenido de dichos sitios. Te recomendamos revisar las políticas de privacidad de esos sitios antes de proporcionar cualquier información personal.
-
-                        6. Seguridad de la información:
-
-                        Nos comprometemos a proteger la información personal que recopilamos. Sin embargo, debes tener en cuenta que ninguna transmisión de datos a través de Internet o método de almacenamiento electrónico es completamente seguro. Hacemos todo lo posible para proteger tu información personal, pero no podemos garantizar su seguridad absoluta.
-
-                        7. Cambios en la política de privacidad:
-
-                        Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Cualquier cambio se reflejará en esta página con una nueva fecha de "última actualización". Te recomendamos revisar periódicamente esta Política de Privacidad para estar al tanto de cualquier modificación.
-
-                        8. Contacto:
-
-                        Si tienes alguna pregunta o inquietud acerca de esta Política de Privacidad o sobre cómo tratamos la información personal, por favor contáctanos a través de [correo electrónico de contacto].
-
-                        Al utilizar nuestro Sitio, aceptas los términos establecidos en esta Política de Privacidad. Gracias por visitar ju4nr3v0l.github.io.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Ubicación</h3>
-                        
-                            <p>Medellín, Antioquia, Colombia</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>En la WEB</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/juandavidmarulandavelasquez" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/110195285294078029375" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/ju4nr3v0l" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://co.linkedin.com/in/juan-marulanda-9a0679a6" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Juan David Marulanda 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Parque Comercial El Tesoro</h2>
-                            <hr class="star-primary">
-                            <img src="https://scontent.feoh3-1.fna.fbcdn.net/t31.0-8/13920221_10154335571849449_5566071775185540455_o.jpg" class="img-responsive img-centered" alt="">
-                            <p>Sitio Web desarrollado con Wordpress como CMS e interface de API para SQL y AngularJS</p>
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong><a href="http://eltesoro.com.co">El Tesoro Parque Comercial</a>
-                                    </strong>
-                                </li>
-                                <li>Servicio:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Trazabilidad y gestion PINSAL S.A.S.</h2>
-                            <hr class="star-primary">
-                            <img src="https://scontent.feoh1-1.fna.fbcdn.net/t31.0-8/13937966_10154341249104449_4961263130186412164_o.jpg" class="img-responsive img-centered" alt="">
-                            <p>Herramienta web para gestion de glosas y trazabilidad de las mismas desarrollada bajo Wordpress con custom templates.</p>
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong>PRISAL S.A.S.
-                                    </strong>
-                                </li>
-                                
-                                <li>Servicio:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>INSUMA</h2>
-                            <hr class="star-primary">
-                            <img src="https://scontent.feoh1-1.fna.fbcdn.net/t31.0-8/13937897_10154335571774449_2017910771379780369_o.jpg" class="img-responsive img-centered" alt="">
-                            <p>Sitio web y tienda desarrollados bajo Wordpress y WooCommerce.</p>
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong><a href="http://insuma.com.co">Insuma</a>
-                                    </strong>
-                                </li>
-                                <li>Servicio:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Instituto Colombiano de Responsabilidad Civil Contractual</h2>
-                            <hr class="star-primary">
-                            <img src="https://scontent.feoh1-1.fna.fbcdn.net/t31.0-8/13962934_10154341326269449_2719821641857324318_o.jpg" class="img-responsive img-centered" alt="">
-                            <p>Sitio web y tienda desarrollado bajo Wordpress y Woocommerce con integracion de Social Media.</p>
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong><a href="http://iarce.com">IARCE</a>
-                                    </strong>
-                                </li>
-                                
-                                <li>Servicio:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-
-    <!-- jQuery -->
-
-
-    <!-- Bootstrap Core JavaScript -->
-   
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    
-
-    <!-- Theme JavaScript -->
-   
-
-</body>
-
-</html>
+  </main>  <footer>
+    <p>&copy; 2025 Juan David Marulanda. Todos los derechos reservados.</p>
+  </footer>
+</body></html>
